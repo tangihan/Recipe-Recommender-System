@@ -16,7 +16,7 @@ time.sleep(2)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 link_csv_path = dir_path + "/" + "links.csv"
 
-csvFile = open("reviews.csv", "a", newline='', encoding="utf-8")
+csvFile = open("reviews.csv", "w", newline='', encoding="utf-8")
 csvWriter = csv.writer(csvFile)
 
 doneLinkFile = open("link p.csv", "w", newline='', encoding="utf-8")
@@ -25,6 +25,7 @@ doneLinkcsvWriter = csv.writer(doneLinkFile)
 
 # below are adjustable variables for the user to change what type of data they want
 # 200 review pages are generally used because they are where reviews from 2017 are generally included which is how far back our group wishes to track
+# place count is allowed to be set as well as the computer might not be able to handle more than 30 places worth of reviews without crashing due to lack of ram
 
 # --------------------------------------------- ADJUSTER VARIABLES ----------------------------------------------------
 # variable to adjust how many places you want 
