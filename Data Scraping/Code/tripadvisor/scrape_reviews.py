@@ -128,9 +128,7 @@ with open(link_csv_path) as file_handler:
                     except:
                         review_num_text = ""
                     
-                    # if the review is not empty then it will add it to the csv file
-                    if date_of_review_text != "":
-                        csvWriter.writerow((place_name_text,date_of_review_text,location_text,title_text,review_content_text,date_of_exp_text,review_num_text))   
+ 
 
                 # output to show user which review page it is at
                 print("review page", j+1 ,"done")
